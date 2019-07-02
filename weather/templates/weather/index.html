@@ -13,18 +13,135 @@
 
 	<!-- replace this html -->
 	<div class="container">
-		<div class="jumbotron text-light bg-primary">
-			<h1>Congratulations</h1>
-			<p>You've set your environment up correctly!</p>
-		</div>
+    <div class="top_menu_bar">
+      <div class="alert_icon">
+          <img src="../../static/weather/assets/alertIcon.jpg" />
+      </div>
+      <div class="page_title">
+        <p>
+          My Courses
+        </p>
+      </div>
+      <div class="lookup_icon">
+       <img src="../../static/weather/assets/lookupIcon.png" />
+      </div>
+      <div class="setting_icon">
+        <img src="../../static/weather/assets/settingIcon.png" />
+      </div>  
+       
+    </div>
+  
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Recent
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Booked
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option4" autocomplete="off"> Nearby
+      </label>
 
-		<a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
-		<a href="/weather/forecast/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast with alert</a>
-		<a href="/weather/comparison/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison</a>
-		<a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>
+  </div>
+    <div class="main_content">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Cinnabar Hills</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Half Moon Bay</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Hidden Brooke</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">TPC Harding Park</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="card" style="width: 18rem;">
+                <img src="../../static/weather/assets/CinnabarHill.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cinnabar Hill</h5>
+                  <p class="card-text">$$ 9Hole/18Hole 3Hour Cancellation Policy</p>
+                  <ul class="list-group">
+                    <li class="list-group-item">07:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">08:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">09:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">10:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">11:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <div class="card" style="width: 18rem;">
+                <img src="../../static/weather/assets/HalfMoonBay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Half Moon Bay</h5>
+                  <p class="card-text">$$ 9Hole/18Hole No refund Policy</p>
+                  <ul class="list-group">
+                    <li class="list-group-item">07:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">08:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherCloudy.png" /></li>
+                    <li class="list-group-item">09:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherCloudy.png" /></li>
+                    <li class="list-group-item">10:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">11:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <div class="card" style="width: 18rem;">
+                <img src="../../static/weather/assets/HiddenBrooke.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">TPC Harding Park</h5>
+                  <p class="card-text">$$ 9Hole/18Hole 3Hour Cancellation Policy</p>
+                  <ul class="list-group">
+                    <li class="list-group-item">07:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                    <li class="list-group-item">08:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                    <li class="list-group-item">09:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                    <li class="list-group-item">10:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                    <li class="list-group-item">11:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <div class="card" style="width: 18rem;">
+                <img src="../../static/weather/assets/TPCHardingPark.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">$$ 9Hole/18Hole 3Hour Cancellation Policy</p>
+                  <ul class="list-group">
+                    <li class="list-group-item">07:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">08:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">09:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">10:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weatherPartlyCloudy.png" /></li>
+                    <li class="list-group-item">11:00AM<img class="weather" width=30px height=30px align="right"src="../../static/weather/assets/weather_sunny.png" /></li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_menu">
+		  <a href="/weather/forecast/" class="btn btn-outline-success btn-lg active" role="button" aria-pressed="true"><img height=30px width=30px src="../../static/weather/assets/bottom1.png" /></a>
+      <a href="/weather/forecast/alert/" class="btn btn-outline-success btn-lg active" role="button" aria-pressed="true"><img height=30px width=30px src="../../static/weather/assets/bottom2.png" /></a>
+      <a href="/weather/comparison/" class="btn btn-outline-success btn-lg active" role="button" aria-pressed="true"><img height=30px width=30px src="../../static/weather/assets/bottom3.png" /></a>
+      <a href="/weather/comparison/alert/" class="btn btn-outline-success btn-lg active" role="button" aria-pressed="true"><img height=30px width=30px src="../../static/weather/assets/bottom4.png" /></a>
+      <a href="/weather/comparison/alert/" class="btn btn-outline-success btn-lg active" role="button" aria-pressed="true"><img height=30px width=30px src="../../static/weather/assets/bottom5.png" /></a>
+    </div>
+      
+  
 	</div>
 	
 	<!-- /replace this html -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
 

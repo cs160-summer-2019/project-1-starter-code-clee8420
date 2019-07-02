@@ -1,3 +1,44 @@
+.top_menu_bar{
+  background-color: rgb(102, 245, 66);
+  height: 40px;
+}
+.top_menu_bar .alert_icon{
+  display: inline-block;
+}
+
+.top_menu_bar .lookup_icon{
+  display: inline-block;
+  height: 40px;
+}
+.top_menu_bar .setting_icon{
+  display: inline-block;
+  height: 40px;
+}
+
+.top_menu_bar .setting_icon img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.top_menu_bar .lookup_icon img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.top_menu_bar .page_title{
+  display: inline-block;
+  width: 80%
+}
+.top_menu_bar .page_title p{
+  text-align:center;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+img.weather{
+  display:inline-block;
+}
+
 li {
     color: green;
 }
